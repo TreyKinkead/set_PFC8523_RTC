@@ -3,7 +3,7 @@
 Serial console will print current date and time in a loop.
 
 To set the time, send the command `set YYYY-MM-DD HH:MI:SS`
-with the date and time you desire. It will not be read until
+with the date and time you desire in ISO standard format. It will not be read until
 a NEWLINE character is received (when you press _enter_ / _return_ ).
 
 for example:
@@ -14,7 +14,10 @@ compare your computer's clock with the board's RTC. If you
 don't get it right the first time, keep on sending 'set'
 commands until you are happy. :-)
 
-Tested on Adafruit Feather RP2040 and datalogger wing.
+Tested on
+[Adafruit Feather RP2040](https://www.adafruit.com/product/4884)
+and
+[Adalogger FeatherWing - RTC + SD](https://www.adafruit.com/product/2922).
 
 ## Libraries required:
 

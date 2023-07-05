@@ -17,6 +17,7 @@
 // Author: Trey Kinkead
 //
 #include "RTClib.h"
+#include <time.h>
 
 RTC_PCF8523 rtc;
 
@@ -41,6 +42,7 @@ void setup() {
     }
   }
 
+  
   if (!rtc.initialized() || rtc.lostPower()) {
     console.println("RTC is NOT initialized");
   }
